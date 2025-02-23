@@ -20,7 +20,7 @@ router.post("/create", async (req, res) => {
   try {
     const newProperty = new Property(req.body);
     await newProperty.save();
-    res.status(201).json({ message: "Property stored successfully" });
+    res.status(201).json({ message: "Property stored successfully!!!" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
